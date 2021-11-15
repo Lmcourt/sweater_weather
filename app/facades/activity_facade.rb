@@ -1,8 +1,9 @@
 class ActivityFacade
   class << self
-    def activity_by_type(type)
+    def activity_by_type(type, location)
       activity = ActivityService.activity_by_type(type)
-      Activity.new(activity)
+      weather = WeatherFacade.weather_by_location(location)
+      Activity.new(location, activity, weather)
     end
   end
 end
