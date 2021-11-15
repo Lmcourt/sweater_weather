@@ -1,26 +1,28 @@
 class Activity
   attr_reader :id, :activities, :destination, :forecast
 
-  def initialize(location, activity_info, weather_info)
+  def initialize(data)
     @id = nil
-    @destination = location
-    @forecast = weather_forecast(weather_info)
-    @activities = activity(activity_info)
+    # require "pry"; binding.pry
+    @destination = data[:destination]
+    @forecast = weather_info(data[:forecast])
+    @activities = activity(data[:activities])
   end
 
-  def weather_forecast(weather)
-    {
-      summary: weather[:summary],
-      temperature: weather[:temperature]
-    }
+  def weather_info(weather)
+    { summary: weather[:summary], temperature: weather[:temperature].to_s + " F" }
+    # require "pry"; binding.pry
   end
 
-  def activity(act)
-    {
-      title: act[:activity],
-      type: act[:type],
-      participants: act[:participants],
-      price: act[:price]
-    }
+  def activity(data)
+    # require "pry"; binding.pry
+    data.map do |act|
+      {
+        title: act[:activity],
+        type: act[:type],
+        participants: act[:participants],
+        price: act[:price]
+      }
+    end
   end
 end
