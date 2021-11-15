@@ -9,10 +9,9 @@ class Activity
   end
 
   def weather_forecast(weather)
-    require "pry"; binding.pry
     {
-      summary: weather.current_weather[:condtions],
-      temperature: weather.current_weather[:temp]
+      summary: weather[:summary],
+      temperature: weather[:temperature]
     }
   end
 
