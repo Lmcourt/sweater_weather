@@ -17,7 +17,7 @@ RSpec.describe Weather, :vcr do
       humidity: 28,
       visibility: 10000,
       uvi: 10000,
-      condtions: "scattered clouds",
+      conditions: "scattered clouds",
       icon: "03n"
       })
 
