@@ -6,7 +6,6 @@ class Activity
     @destination = location
     @forecast = weather_forecast(weather_info)
     @activities = activity(activity_info)
-    # require "pry";  binding.pry
   end
 
   def weather_forecast(weather)
@@ -16,12 +15,36 @@ class Activity
     }
   end
 
-  def activity(act)
-    {
-      title: act[:activity],
-      type: act[:type],
-      participants: act[:participants],
-      price: act[:price]
-    }
+  def activity(weather, act)
+    if weather_forecast(weather[:temperature] >= 60)
+      {
+        title: act[:activity],
+        type: 'recreational',
+        participants: act[:participants],
+        price: act[:price]
+      }
+      require "pry"; binding.pry
+    elsif weather_forecast(weather[:temperature] >= 50 && weather[:temperature < 60])
+      {
+        title: act[:activity],
+        type: busywork,
+        participants: act[:participants],
+        price: act[:price]
+      }
+    elsif weather_forecast(weather[:temperature] < 50)
+      {
+        title: act[:activity],
+        type: 'cooking',
+        participants: act[:participants],
+        price: act[:price]
+      }
+    else
+      {
+        title: act[:activity],
+        type: act[:type],
+        participants: act[:participants],
+        price: act[:price]
+      }
+    end
   end
 end
