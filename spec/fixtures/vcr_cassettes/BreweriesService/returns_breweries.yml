@@ -35,7 +35,7 @@ http_interactions:
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Date:
-      - Tue, 16 Nov 2021 17:29:22 GMT
+      - Tue, 16 Nov 2021 18:38:31 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -45,9 +45,9 @@ http_interactions:
       Etag:
       - W/"791278274c904c27453dfeddaa7d1e0b"
       X-Request-Id:
-      - 536b14c4-62ae-472c-bee8-af6e091eeff8
+      - 3fe1cdb1-1c09-4bc3-a141-3eb3180609bc
       X-Runtime:
-      - '0.036636'
+      - '0.045224'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Transfer-Encoding:
@@ -68,5 +68,5 @@ http_interactions:
         Hill Brewery \u0026 Restaurant - Lancaster","brewery_type":"brewpub","street":"781
         Harrisburg Pike","address_2":null,"address_3":null,"city":"Lancaster","state":"Pennsylvania","county_province":null,"postal_code":"17603-2655","country":"United
         States","longitude":"-76.3188136","latitude":"40.0506816","phone":"7172919800","website_url":"http://www.ironhillbrewery.com","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"}]'
-  recorded_at: Tue, 16 Nov 2021 17:29:22 GMT
+  recorded_at: Tue, 16 Nov 2021 18:38:31 GMT
 recorded_with: VCR 6.0.0

@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '139'
+      - '120'
       Etag:
-      - W/"8b-ulyyJ+/Y4YBNsFITb3ys2mEUYQ0"
+      - W/"78-tZHpEjYTiXlvBBUX8OzulbytI3Q"
       Date:
-      - Tue, 16 Nov 2021 17:29:22 GMT
+      - Tue, 16 Nov 2021 18:38:31 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Watch the sunset or the sunrise","type":"recreational","participants":1,"price":0,"link":"","key":"4748214","accessibility":1}'
-  recorded_at: Tue, 16 Nov 2021 17:29:22 GMT
+      string: '{"activity":"Write a poem","type":"recreational","participants":1,"price":0,"link":"","key":"8688620","accessibility":0}'
+  recorded_at: Tue, 16 Nov 2021 18:38:31 GMT
 recorded_with: VCR 6.0.0
