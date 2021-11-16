@@ -30,12 +30,10 @@ describe 'breweries API', :vcr do
     expect(brew_attr[:brewery_type]).to be_a(String)
   end
 
-  it 'defaults to 20 breweries if not given a valid quantity' do
+  it 'returns error if not given a valid quantity' do
     get '/api/v1/breweries?location=denver,co&quantity=-1'
 
-    expect(response).to be_successful
-    brew = JSON.parse(response.body, symbolize_names: true)
-
-    expect(brew[:data][:attributes][:breweries].count).to eq(20)
+    expect(response).to_not be_successful
+    expect(response).to have_http_status(400)
   end
 end
