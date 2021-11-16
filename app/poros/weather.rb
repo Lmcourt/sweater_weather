@@ -17,7 +17,7 @@ class Weather
       humidity: current[:humidity],
       visibility: current[:visibility],
       uvi: current[:visibility],
-      condtions: current[:weather].first[:description],
+      conditions: current[:weather].first[:description],
       icon: current[:weather].first[:icon]
     }
   end
