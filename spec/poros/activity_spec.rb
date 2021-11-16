@@ -28,7 +28,7 @@ RSpec.describe Activity, :vcr do
     expect(activity.destination[:destination]).to eq("chicago,il")
     expect(activity.forecast).to eq({
       summary: 'Cloudy with a chance of meatballs',
-      temperature: 45.12
+      temperature: "45.12 F"
     })
     expect(activities.first[:type]).to eq('cooking')
   end
