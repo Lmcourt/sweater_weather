@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '130'
+      - '139'
       Etag:
-      - W/"82-a7y/zPkUDZjPVwRop+Dkdavs+RU"
+      - W/"8b-ulyyJ+/Y4YBNsFITb3ys2mEUYQ0"
       Date:
-      - Tue, 16 Nov 2021 16:43:16 GMT
+      - Tue, 16 Nov 2021 17:29:22 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Solve a Rubik''s cube","type":"recreational","participants":1,"price":0,"link":"","key":"4151544","accessibility":0.1}'
-  recorded_at: Tue, 16 Nov 2021 16:43:16 GMT
+      string: '{"activity":"Watch the sunset or the sunrise","type":"recreational","participants":1,"price":0,"link":"","key":"4748214","accessibility":1}'
+  recorded_at: Tue, 16 Nov 2021 17:29:22 GMT
 recorded_with: VCR 6.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.openbrewerydb.org/breweries?by_dist=38.8977,77.0365&per_page=5
+    uri: https://api.openbrewerydb.org/breweries?by_dist=40.039401,-76.307078&per_page=5
     body:
       encoding: US-ASCII
       string: ''
@@ -35,7 +35,7 @@ http_interactions:
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Date:
-      - Tue, 16 Nov 2021 16:43:17 GMT
+      - Tue, 16 Nov 2021 17:29:22 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -43,11 +43,11 @@ http_interactions:
       Cache-Control:
       - max-age=86400, public
       Etag:
-      - W/"71cd53aac84ae851b60303185ab589af"
+      - W/"791278274c904c27453dfeddaa7d1e0b"
       X-Request-Id:
-      - 1bfc1d2e-b706-43f0-9ae1-daa14834bc43
+      - 536b14c4-62ae-472c-bee8-af6e091eeff8
       X-Runtime:
-      - '0.032386'
+      - '0.036636'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Transfer-Encoding:
@@ -56,18 +56,17 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":"mescan-brewery-kilsallagh","name":"Mescan Brewery","brewery_type":"micro","street":"Cartoor","address_2":null,"address_3":null,"city":"Kilsallagh","state":null,"county_province":"Mayo","postal_code":"F28
-        FW70","country":"Ireland","longitude":"9.73047","latitude":"53.7471934","phone":"3.53868E+11","website_url":"https://www.mescanbrewery.com/","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"},{"id":"jaw-brew-milngavie","name":"Jaw
-        Brew","brewery_type":"micro","street":"26 Crossveggate","address_2":null,"address_3":null,"city":"Milngavie","state":null,"county_province":"East
-        Dunbartonshire","postal_code":"G62 6RA","country":"Scotland","longitude":"55.9408943","latitude":"-4.3131808","phone":"7880690995","website_url":"https://www.jawbrew.co.uk/","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"},{"id":"late-night-hype-brewing-co-clydebank","name":"Late
-        Night Hype Brewing Co","brewery_type":"micro","street":"Unit 17","address_2":"Andrew
-        Court","address_3":"South Douglas Streeet","city":"Clydebank","state":null,"county_province":"West
-        Dunbartonshire","postal_code":"G81 1PD","country":"Scotland","longitude":"55.8959515","latitude":"-4.4023283","phone":"1412611278","website_url":"http://www.latenighthypebrewing.com/","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"},{"id":"loch-lomond-brewery-dumbarton","name":"Loch
-        Lomond Brewery","brewery_type":"micro","street":"Block 2 Unit 11","address_2":"Vale
-        of Leven Industrial Estate","address_3":null,"city":"Dumbarton","state":null,"county_province":"West
-        Dunbartonshire","postal_code":"G82 3PD","country":"Scotland","longitude":"55.969774","latitude":"-4.576255","phone":"1389755698","website_url":"https://www.lochlomondbrewery.com/","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"},{"id":"lennox-brewery-dumbarton","name":"Lennox
-        Brewery","brewery_type":"micro","street":"25 Lime Road","address_2":"Broadmeadow
-        Industrial Estate","address_3":null,"city":"Dumbarton","state":null,"county_province":"West
-        Dunbartonshire","postal_code":"G82 2RP","country":"Scotland","longitude":"55.9478947","latitude":"-4.5708885","phone":"1389298642","website_url":"https://www.lennoxbrewery.com/","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"}]'
-  recorded_at: Tue, 16 Nov 2021 16:43:17 GMT
+      string: '[{"id":"wacker-brewing-co-lancaster","name":"Wacker Brewing Co","brewery_type":"micro","street":"417
+        W Grant St","address_2":null,"address_3":null,"city":"Lancaster","state":"Pennsylvania","county_province":null,"postal_code":"17603","country":"United
+        States","longitude":"-76.31365439","latitude":"40.03799427","phone":"7176172711","website_url":"http://www.wackerbrewing.com","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"},{"id":"lancaster-brewing-co-lancaster","name":"Lancaster
+        Brewing Co","brewery_type":"micro","street":"302 N Plum St # 304","address_2":null,"address_3":null,"city":"Lancaster","state":"Pennsylvania","county_province":null,"postal_code":"17602-2402","country":"United
+        States","longitude":"-76.29853301","latitude":"40.0438635","phone":"7173916258","website_url":"http://www.lancasterbrewing.com","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"},{"id":"spring-house-brewery-lancaster","name":"Spring
+        House Brewery","brewery_type":"micro","street":"209 Hazel St","address_2":null,"address_3":null,"city":"Lancaster","state":"Pennsylvania","county_province":null,"postal_code":"17603-5629","country":"United
+        States","longitude":"-76.30710904","latitude":"40.02936738","phone":"7178720925","website_url":"http://www.springhousebeer.com","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"},{"id":"fetish-brewing-co-lancaster","name":"Fetish
+        Brewing Co","brewery_type":"micro","street":"325 Ice Ave","address_2":null,"address_3":null,"city":"Lancaster","state":"Pennsylvania","county_province":null,"postal_code":"17602-1930","country":"United
+        States","longitude":"-76.30114271","latitude":"40.052413","phone":null,"website_url":"http://fetishbrewing.tumblr.com","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"},{"id":"iron-hill-brewery-and-restaurant-lancaster-lancaster","name":"Iron
+        Hill Brewery \u0026 Restaurant - Lancaster","brewery_type":"brewpub","street":"781
+        Harrisburg Pike","address_2":null,"address_3":null,"city":"Lancaster","state":"Pennsylvania","county_province":null,"postal_code":"17603-2655","country":"United
+        States","longitude":"-76.3188136","latitude":"40.0506816","phone":"7172919800","website_url":"http://www.ironhillbrewery.com","updated_at":"2021-10-23T02:24:55.243Z","created_at":"2021-10-23T02:24:55.243Z"}]'
+  recorded_at: Tue, 16 Nov 2021 17:29:22 GMT
 recorded_with: VCR 6.0.0
