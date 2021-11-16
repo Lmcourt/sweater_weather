@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Tue, 16 Nov 2021 02:59:43 GMT
+      - Tue, 16 Nov 2021 02:59:49 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '1028'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Tue, 16 Nov 2021 02:59:43 GMT
+      - Tue, 16 Nov 2021 02:59:49 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=E18931B954B00877498A3D2827CECE4F; Path=/; HttpOnly
+      - JSESSIONID=02633371266EDE6A16F85DB77C66B83D; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,8 +51,8 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"chicago,il"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Chicago","adminArea5Type":"City","adminArea4":"Cook
-        County","adminArea4Type":"County","adminArea3":"IL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039507","unknownInput":"","type":"s","latLng":{"lat":41.883229,"lng":-87.632398},"displayLatLng":{"lat":41.883229,"lng":-87.632398},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=3pduWtNsjnLaNyc87rGvc9nAfQmav6QG&type=map&size=225,160&locations=41.883229,-87.632398|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-770311885"}]}]}'
-  recorded_at: Tue, 16 Nov 2021 02:59:43 GMT
+        County","adminArea4Type":"County","adminArea3":"IL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039507","unknownInput":"","type":"s","latLng":{"lat":41.883229,"lng":-87.632398},"displayLatLng":{"lat":41.883229,"lng":-87.632398},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=3pduWtNsjnLaNyc87rGvc9nAfQmav6QG&type=map&size=225,160&locations=41.883229,-87.632398|marker-sm-50318A-1&scalebar=true&zoom=12&rand=419146686"}]}]}'
+  recorded_at: Tue, 16 Nov 2021 02:59:49 GMT
 - request:
     method: get
     uri: http://api.openweathermap.org/data/2.5/onecall?appid=ef537e09f0f6c5145be56859f0f6b253&exclude=minutely,alerts&lat=41.883229&lon=-87.632398&units=imperial
@@ -74,7 +74,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 16 Nov 2021 02:59:44 GMT
+      - Tue, 16 Nov 2021 02:59:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -91,7 +91,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":41.8832,"lon":-87.6324,"timezone":"America/Chicago","timezone_offset":-21600,"current":{"dt":1637031583,"sunrise":1636980037,"sunset":1637015399,"temp":34.2,"feels_like":34.2,"pressure":1020,"humidity":77,"dew_point":28.26,"uvi":0,"clouds":90,"visibility":10000,"wind_speed":1.01,"wind_deg":112,"wind_gust":1.01,"weather":[{"id":804,"main":"Clouds","description":"overcast
+      string: '{"lat":41.8832,"lon":-87.6324,"timezone":"America/Chicago","timezone_offset":-21600,"current":{"dt":1637031589,"sunrise":1636980037,"sunset":1637015399,"temp":34.2,"feels_like":34.2,"pressure":1020,"humidity":77,"dew_point":28.26,"uvi":0,"clouds":90,"visibility":10000,"wind_speed":1.01,"wind_deg":112,"wind_gust":1.01,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04n"}]},"hourly":[{"dt":1637028000,"temp":34.54,"feels_like":30.61,"pressure":1020,"humidity":79,"dew_point":29.1,"uvi":0,"clouds":92,"visibility":10000,"wind_speed":4.38,"wind_deg":175,"wind_gust":5.41,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04n"}],"pop":0.02},{"dt":1637031600,"temp":34.2,"feels_like":30.72,"pressure":1020,"humidity":77,"dew_point":28.26,"uvi":0,"clouds":90,"visibility":10000,"wind_speed":3.89,"wind_deg":168,"wind_gust":4.79,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04n"}],"pop":0},{"dt":1637035200,"temp":34.66,"feels_like":31.51,"pressure":1020,"humidity":79,"dew_point":29.21,"uvi":0,"clouds":92,"visibility":10000,"wind_speed":3.67,"wind_deg":167,"wind_gust":4.27,"weather":[{"id":804,"main":"Clouds","description":"overcast
@@ -149,7 +149,7 @@ http_interactions:
         clouds","icon":"04d"}],"clouds":100,"pop":0,"uvi":2},{"dt":1637514000,"sunrise":1637498873,"sunset":1637533526,"moonrise":1637538960,"moonset":1637506740,"moon_phase":0.57,"temp":{"day":41.61,"min":36.48,"max":43.97,"night":39.61,"eve":40.69,"morn":36.48},"feels_like":{"day":36.5,"night":35.17,"eve":38.26,"morn":26.87},"pressure":1025,"humidity":41,"dew_point":19.44,"wind_speed":16.49,"wind_deg":298,"wind_gust":30.13,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":3,"pop":0,"uvi":2},{"dt":1637600400,"sunrise":1637585344,"sunset":1637619887,"moonrise":1637628180,"moonset":1637596500,"moon_phase":0.6,"temp":{"day":44.37,"min":35.47,"max":46.63,"night":35.47,"eve":45.19,"morn":37.56},"feels_like":{"day":39,"night":23.9,"eve":37.58,"morn":32.32},"pressure":1011,"humidity":44,"dew_point":23.7,"wind_speed":22.57,"wind_deg":319,"wind_gust":32.53,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}],"clouds":77,"pop":0.03,"uvi":2}]}'
-  recorded_at: Tue, 16 Nov 2021 02:59:44 GMT
+  recorded_at: Tue, 16 Nov 2021 02:59:49 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=relaxation
@@ -181,17 +181,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '134'
+      - '151'
       Etag:
-      - W/"86-Jv8ZboB8ImLXR1sJhXPFU8E3H8Y"
+      - W/"97-JbFu+LMV+jFjwnWr5c0DNGI26co"
       Date:
-      - Tue, 16 Nov 2021 02:59:46 GMT
+      - Tue, 16 Nov 2021 02:59:51 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Meditate for five minutes","type":"relaxation","participants":1,"price":0,"link":"","key":"3699502","accessibility":0.05}'
-  recorded_at: Tue, 16 Nov 2021 02:59:46 GMT
+      string: '{"activity":"Watch a movie you''d never usually watch","type":"relaxation","participants":1,"price":0.15,"link":"","key":"9212950","accessibility":0.15}'
+  recorded_at: Tue, 16 Nov 2021 02:59:51 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=cooking
@@ -223,15 +223,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '135'
+      - '124'
       Etag:
-      - W/"87-hsxLgcK2hy3Uoj6B8IUqnKqF1fc"
+      - W/"7c-cOMTa1cyHNpBb9A6nwmCKKUkyTw"
       Date:
-      - Tue, 16 Nov 2021 02:59:48 GMT
+      - Tue, 16 Nov 2021 02:59:54 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Bake a pie with some friends","type":"cooking","participants":3,"price":0.3,"link":"","key":"3141592","accessibility":0.3}'
-  recorded_at: Tue, 16 Nov 2021 02:59:48 GMT
+      string: '{"activity":"Learn a new recipe","type":"cooking","participants":1,"price":0,"link":"","key":"6553978","accessibility":0.05}'
+  recorded_at: Tue, 16 Nov 2021 02:59:54 GMT
 recorded_with: VCR 6.0.0
