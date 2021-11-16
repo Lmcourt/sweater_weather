@@ -2,7 +2,7 @@ class ActivityFacade
   class << self
     def activity_by_type(location)
       weather_info = WeatherFacade.weather_by_location(location)
-      weather = { summary: weather_info.current_weather[:condtions], temperature: weather_info.current_weather[:temp]}
+      weather = { summary: weather_info.current_weather[:conditions], temperature: weather_info.current_weather[:temp]}
       # require "pry"; binding.pry
       activities = []
 
