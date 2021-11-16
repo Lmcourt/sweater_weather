@@ -24,6 +24,8 @@ describe 'breweries API', :vcr do
     expect(brew[:data][:attributes][:forecast]).to be_a(Hash)
 
     expect(brew[:data][:attributes][:breweries]).to be_an(Array)
+    expect(brew[:data][:attributes][:breweries].count).to eq(5)
+
     brew_attr= brew[:data][:attributes][:breweries].first
     expect(brew_attr[:id]).to be_a(String)
     expect(brew_attr[:name]).to be_a(String)
