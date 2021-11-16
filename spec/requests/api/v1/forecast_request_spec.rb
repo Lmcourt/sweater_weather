@@ -15,7 +15,7 @@ describe 'forecast API', :vcr do
 
     current = attr[:current_weather]
     expect(current).to be_a(Hash)
-    current_keys = [:datetime, :sunrise, :sunset, :temp, :feels_like, :humidity, :visibility, :uvi, :condtions, :icon]
+    current_keys = [:datetime, :sunrise, :sunset, :temp, :feels_like, :humidity, :visibility, :uvi, :conditions, :icon]
     not_current_keys = [:pressure, :dew_point, :clouds, :wind_deg, :wind_gust]
     expect(current.keys).to eq(current_keys)
     expect(current.keys).to_not eq(not_current_keys)
