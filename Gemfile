@@ -9,6 +9,7 @@ gem 'rails', '~> 5.2.6'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+gem 'bcrypt'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -28,7 +29,7 @@ gem 'jsonapi-serializer'
 gem 'rubocop'
 gem 'faraday'
 gem 'geocoder'
-gem "factory_bot"
+gem "factory_bot_rails"
 gem 'faker'
 gem 'figaro'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
