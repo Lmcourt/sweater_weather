@@ -1,11 +1,7 @@
-require 'securerandom'
-
-class UsersController < ApplicationController
+class Api::V1::UsersController < ApplicationController
   def create
-    user = User.create(user_params)
-    if user.save
-    api_key = SecureRandom.uuid
-    render json: UserSerializer.new(user, api_key), status: 201
+    user = User.create!(user_params)
+    render json: UsersSerializer.new(user), status: :created
   end
 
   private
