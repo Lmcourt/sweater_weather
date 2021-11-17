@@ -6,4 +6,8 @@ RSpec.describe WeatherFacade, :vcr do
     expect(weather).to be_a(Weather)
   end
 
+  it 'gets map coordinates' do
+    coords = WeatherFacade.coordinates('Denver,CO')
+    expect(coords).to eq({ lat: 39.738453, lng: -104.984853 })
+  end
 end
