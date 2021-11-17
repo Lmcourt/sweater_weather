@@ -3,8 +3,8 @@ class Weather
   def initialize(data)
     @id = nil
     @current_weather = current(data[:current])
-    @daily_weather = daily(data[:daily])
-    @hourly_weather = hourly(data[:hourly])
+    @daily_weather = daily(data[:daily].take(5))
+    @hourly_weather = hourly(data[:hourly].take(8))
   end
 
   def current(current)
@@ -23,7 +23,7 @@ class Weather
   end
 
   def daily(daily)
-    daily.take(5).map do |day|
+    daily.map do |day|
       {
         datetime: Time.zone.at(day[:dt]),
         sunrise: Time.zone.at(day[:sunrise]),
@@ -37,7 +37,7 @@ class Weather
   end
 
   def hourly(hourly)
-    hourly.take(8).map do |hour|
+    hourly.map do |hour|
       {
         datetime: Time.zone.at(hour[:dt]),
         temperature: hour[:temp],

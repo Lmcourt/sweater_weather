@@ -8,5 +8,9 @@ class MapService
     def filter_data(result)
       result[:results].first[:locations].first[:latLng]
     end
+
+    def route(from, to)
+      MapClient.get_directions("/directions/v2/route", origin: from, destination: to)[:route]
+    end
   end
 end
