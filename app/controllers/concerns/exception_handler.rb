@@ -4,11 +4,11 @@ module ExceptionHandler
   included do
 
     rescue_from ActiveRecord::RecordInvalid do |e|
-      render json: { message: e.message, errors: 'Invalid credentials' }, status: 400
+      render json: { message: e.message, errors: 'email already exists or passwords do not match' }, status: 400
     end
 
-    # rescue_from ActionController::BadRequest do |e|
-    #   render json: { errors: 'Invalid parameters' }, status: 400
-    # end
+    rescue_from ActiveRecord::RecordNotFound do |e|
+      render json: { message: e.message, errors: 'Invalid credentials' }, status: :not_found
+    end
   end
 end
