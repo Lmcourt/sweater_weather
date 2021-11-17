@@ -29,7 +29,7 @@ gem 'jsonapi-serializer'
 gem 'rubocop'
 gem 'faraday'
 gem 'geocoder'
-gem "factory_bot"
+gem "factory_bot_rails"
 gem 'faker'
 gem 'figaro'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
