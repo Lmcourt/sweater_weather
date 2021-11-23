@@ -32,6 +32,7 @@ gem 'geocoder'
 gem "factory_bot_rails"
 gem 'faker'
 gem 'figaro'
+gem 'circleci'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
